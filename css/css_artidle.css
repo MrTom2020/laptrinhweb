@@ -1,0 +1,8 @@
+article.container section#s1_chung_toi,
+article.container section#s_chung_toi,
+article.container section#s2_chung_toi,
+article.container section#s3_chung_toi {
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-bottom: 10%;
+}
