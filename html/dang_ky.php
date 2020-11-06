@@ -25,7 +25,7 @@
         <div class="container">
         <div class="row">
         <div class="col-sm-12">
-        <form form="" action="trangkiemtra.php" method="get" role="form" class="row">
+        <form  action="t_dang_ky.php" method="POST" role="form" class="row">
         <div class="form-group row">
            <label for="madk">Mã đăng ký</label>
             <br>
@@ -45,12 +45,12 @@
          <div class="form-group row mt-5">
            <label for="SDT">SDT</label>
             <br>
-         <input type="text" placeholder="Xin hãy nhập tài khoản " class="col-sm-10" id="SDT" name="SDT">
+         <input type="text" placeholder="Xin hãy nhập tài khoản " class="col-sm-10" id="SDTDK" name="SDTDK">
          </div>
          <div class="form-group row mt-5">
            <label for="DIACHI">ĐỊA CHỈ</label>
             <br>
-         <input type="text" placeholder="Xin hãy nhập tài khoản " class="col-sm-10" id="DIACHI" name="DIACHI">
+         <input type="text" placeholder="Xin hãy nhập tài khoản " class="col-sm-10" id="DIACHIDK" name="DIACHIDK">
          </div>
          <div class="form-group row mt-3">
            <label for="ngaysinhtkdk">NGÀY SINH</label>

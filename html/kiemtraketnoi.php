@@ -2,7 +2,7 @@
 <html lang="vi">
 <head>
     <tittle>KIỂM TRA KẾT NỐI THÔI</tittle>
-    <meta http-equiv="refresh" content="1,url=trangchu.php">
+   
     <meta charset="utf-8"/>
     <?php session_start(); ?>
 </head>
@@ -29,7 +29,7 @@
       {
             if($row['Usename'] == $tennhap && $row['password'] == $matkhaunhap)
             {
-                $_SESSION["HIEP"] = $_REQUEST["tentk1"];
+               echo   $row['Usename']. "h,hohoh";
             }
             else
             {
