@@ -18,6 +18,10 @@ div#dn div.modal-content {
     background-image: linear-gradient(to bottom right, #2eb84b, #fff);
 }
 
+div#vi div#vi_tien {
+    background: #2cb84b;
+}
+
 div#dk1 div.modal-content {
     background-image: linear-gradient(to bottom right, #2eb84b, #fff);
 }

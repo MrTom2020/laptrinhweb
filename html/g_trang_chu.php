@@ -7,7 +7,7 @@
 </head>
 <body>
 <article id="btrangchu1">
-    <section class="container">
+    <section class="container-fluid">
             <div class="col-sm-3" style="padding-bottom:10%;font-size:20px;"><button>Tin tức</button></div>
             <div class="col-sm-3" style="padding-bottom:10%;font-size:20px;"><button>Khuyến mãi</button></div>
             <div class="col-sm-3" style="padding-bottom:10%font-size:20px;"><button>Liên hệ</button></div>

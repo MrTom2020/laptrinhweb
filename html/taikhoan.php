@@ -9,6 +9,9 @@
     <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="../css/chuyen_trang.css">
     <link rel="stylesheet" type="text/css" href="../css/css_cua_trang_chu.css">
+    <?php
+            session_start();
+    ?>
 </head>
 <body>
 <a href="#dn"><img id="up" src="https://img.icons8.com/cute-clipart/64/000000/circled-chevron-up.png"/></a>  
@@ -21,7 +24,7 @@
     
     <header id="hder">
         <img src="../tainguyenkhac/hinh_anh/hinh_background/bk3.png" alt="Hình banner" class="img-thumbnail" style="border:none;background-color: #2cb84b;">
-        <button data-toggle="modal" data-target="#dn" id="DN">ĐĂNG NHẬP</button>
+        <button data-toggle="modal" data-target="#dn"  id="DN" style="margin-right: 20px;"><?php  echo $_SESSION['tentaikhoan']; ?></button>
         <button data-toggle="modal" id="dk"  data-target="#dk1"> ĐĂNG KÝ</button>
     </header>
     <nav id="NAV" class="navbar navbar-default">
@@ -29,13 +32,12 @@
     </nav>
     <aside class="main-app-container" name="gioithieu">
         <section>
-    <p id="hiep"></p>
-    <?php include'g_tai_khoan.php' ?>
+          <?php include'g_tai_khoan.php' ?>
         </section>
         <article>
         </article>
     </aside>
-    <footer style=" background-color: #019421; width: 100vw; height: 15vh;border: 1px solid #135421;">
+    <footer style="background-color: #019421; width: 100vw; height: 15vh;border: 1px solid #135421;">
         <?php include'g_footer.php' ?>
     </footer>
     <script type="text/javascript" src="../js/jquery-1.10.2.min.js">

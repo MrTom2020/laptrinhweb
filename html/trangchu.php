@@ -8,7 +8,10 @@
     <title>QUẢN LÝ CHI TIÊU</title>
     <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="../css/chuyen_trang.css">
-    <link rel="stylesheet" type="text/css" href="../css/css_cua_trang_chu.css">
+   <link rel="stylesheet" type="text/css" href="../css/css_cua_trang_chu.css">
+    <?php
+            session_start();
+    ?>
 </head>
 <body>
 <a href="#dn"><img id="up" src="https://img.icons8.com/cute-clipart/64/000000/circled-chevron-up.png"/></a>  
@@ -21,21 +24,16 @@
     
     <header id="hder">
         <img src="../tainguyenkhac/hinh_anh/hinh_background/bk3.png" alt="Hình banner" class="img-thumbnail" style="border:none;background-color: #2cb84b;">
-        <button data-toggle="modal" data-target="#dn" id="DN"><?php echo $_SESSION["HIEP"] ?></button>
-        <button data-toggle="modal" id="dk"  data-target="#dk1"> ĐĂNG KÝ</button>
+        <button data-toggle="modal" data-target="#dn"  id="DN" style="margin-right: 20px;"><?php  echo $_SESSION['tentaikhoan']; ?></button>
+        <button data-toggle="modal" id="dk"   data-target="#dk1"> ĐĂNG KÝ</button>
     </header>
     <nav id="NAV" class="navbar nav-fill">
-   <?php include'nav.php' ?>
+  <?php include'nav.php' ?>
     </nav>
     <aside class="main-app-container" name="gioithieu">
-        <section>
-    <p id="hiep"></p>
-        </section>
         <article>
             <?php include'g_trang_chu.php' ?>
-            <input type='text' name='txtUser'>
-            <input type='password' name='txtPass'>
-            <button id='login'> đăng nhập </button>
+           
         </article>
     </aside>
     <footer style=" background-color: #019421; width: 100vw; height: 15vh;border: 1px solid #135421;">
@@ -46,6 +44,8 @@
     <script type="text/javascript" src="../js/bootstrap.min.js">
     </script>
     <script type="text/javascript" src="../js/chuyen_noi_dung_trang.js">
+    </script>
+     <script type="text/javascript" src="../js/dangnhap.js">
     </script>
 </body>
 

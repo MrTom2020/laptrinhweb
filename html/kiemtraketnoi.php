@@ -2,17 +2,17 @@
 <html lang="vi">
 <head>
     <tittle>KIỂM TRA KẾT NỐI THÔI</tittle>
-   
+    <meta http-equiv="refresh" content="0.1,url=../web/">
     <meta charset="utf-8"/>
-    <?php session_start(); ?>
+   
 </head>
 <body>
 <?php 
-   $tennhap = $_POST["tentk1"];
-   $matkhaunhap = $_POST["mktk1"];
+     session_start();
+   $tennhap = htmlspecialchars($_POST["tentk1"]);
+   $matkhaunhap = htmlspecialchars($_POST["mktk1"]);
    $servername = "localhost";
    $username = "root";
-   $_SESSION["HIEP"] = $_POST["tentk1"];
    $password = "";
    $dbname = "QLCT";
    $conn = mysqli_connect($servername,$username,$password,$dbname);
@@ -21,6 +21,7 @@
    }else{
        echo"kết nối thành công";
    }
+    
   $sql = "SELECT * FROM dangnhap";
   $ket_noi =mysqli_query($conn,$sql);
   if(mysqli_num_rows($ket_noi) > 0)
@@ -29,13 +30,15 @@
       {
             if($row['Usename'] == $tennhap && $row['password'] == $matkhaunhap)
             {
-               echo   $row['Usename']. "h,hohoh";
+               echo   $row["Usename"] . 
+               $row["password"];
+                $_SESSION['tentaikhoan'] = $tennhap;
+                $_SESSION["logged"] = true;
+                echo $_SESSION['tentaikhoan'];
+                header('Location: http://localhost:8080/html/trangchu.php');
+                exit();
+            
             }
-            else
-            {
-               
-            }
-
       }
      
   }
