@@ -3,6 +3,7 @@
 
 <head>
     <title>Elegant Login Form Flat Responsive Widget Template :: w3layouts</title>
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
     <!-- custom-theme -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -37,7 +38,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <h2 class="login-header w3_header">Log in</h2>
             <div class="w3l_grid">
                 <form class="login-container" action="../html/kiemtraketnoi.php" method="post">
-                    <input type="email" placeholder="Xin hãy nhập tên tài khoản" Name="tentk1" required="">
+                    <input type="text" class="form-control" placeholder="Xin hãy nhập tên tài khoản" Name="tentk1" required="">
                     <input type="password" placeholder="Xin hãy nhập tên mật khẩu" Name="mktk1" required="">
                     <input type="submit" value="Submit">
                 </form>

@@ -20,18 +20,18 @@
                 </div>
                 <div class="modal-body">
                     <div class="container">
-                        <form action="#"  method="POST" role="form" class="row mt-5" action="<?php echo $_SERVER['PHP_SELF'];?>">
-                            <?php 
-                                echo $thongbao;
-                            ?>
-                            
-                            <img src="../tainguyenkhac/hinh_anh/hinh_dong_vat/dong_vat_so_1.png" alt="con lợn cute" class="img-thumbnail" id="conlon1">
-                            
-                            <img src="../tainguyenkhac/hinh_anh/hinh_background/bk2.png"/>
-                            <div class="modal-footer row mt-3">
-                        <input  type="submit" class="btn btn-primary" id='login'> 
-                        <button class="btn btn-primary" data-dismiss="modal" aria-label="close">THOÁT</button>
-                        <button class="btn btn-primary" data-dismiss="modal" aria-label="close">ĐĂNG XUẤT TÀI KHOẢN</button>
+                        <form action="#"  method="POST" role="form" class="row" action="<?php echo $_SERVER['PHP_SELF'];?>">
+                         <div class="col-sm-3">
+                             <?php echo $thongbao; ?>
+                         </div> 
+                         
+                         <img id="dt1" src="../tainguyenkhac/hinh_anh/hinh_background/bk2.png" class="image"/>
+                         <img id="dt2" src="../tainguyenkhac/hinh_anh/hinh_dong_vat/dong_vat_so_1.png" class="image"/>
+                         
+                    </div>
+                    <div class="col-sm-5" id="nut">
+                          <button class="btn btn-secondary" data-dismiss="modal" aria-label="close">ĐĂNG XUẤT</button>
+                         <button class="btn btn-secondary" data-dismiss="modal" aria-label="close">THOÁT</button>
                     </div>
                         </form>
                     

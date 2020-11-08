@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../css/css_cua_trang_chu.css">
     <?php
             session_start();
+            $tendangnhaP = isset($_SESSION['tentaikhoan']) ? $_SESSION['tentaikhoan'] :'ĐĂNG NHẬP';
     ?>
 </head>
 <body>
@@ -24,19 +25,40 @@
     
     <header id="hder">
         <img src="../tainguyenkhac/hinh_anh/hinh_background/bk3.png" alt="Hình banner" class="img-thumbnail" style="border:none;background-color: #2cb84b;">
-        <button data-toggle="modal" data-target="#dn"  id="DN" style="margin-right: 20px;"><?php  echo $_SESSION['tentaikhoan']; ?></button>
+        <button data-toggle="modal" data-target="#dn"  id="DN" style="margin-right: 20px;"><?php  echo $tendangnhaP; ?></button>
         <button data-toggle="modal" id="dk"  data-target="#dk1"> ĐĂNG KÝ</button>
     </header>
     <nav id="NAV" class="navbar navbar-default">
    <?php include'nav.php' ?>
     </nav>
-    <aside class="main-app-container" name="gioithieu">
-        <section>
-    <p id="hiep"></p>
-        </section>
-        <article>
-        </article>
-    </aside>
+    <article class="container">
+       <div class="col-sm-7">
+           <label for="giatien">Tiền</label><input type="text" name="giatien" class="form-control"  placeholder="Xin hãy nhập giá trị" style="margin-bottom: 5vh;">
+           <label for="giatien">Nhóm chi</label><select> 
+            <option value="anuong">ĂN UỐNG</option>
+            <option value="anuong">Nhà hàng</option>
+            <option value="anuong">Cà phê</option>
+           <option value="anuong">Hóa đơn & Tiện ích</option>
+           <option value="anuong">Điện nước</option>
+           <option value="anuong">Di chuyển</option>
+           <option value="anuong">Mua sắm</option>
+           <option value="anuong">Bạn bè & Người yêu</option>
+           <option value="anuong">giải trí</option>
+           <option value="anuong">Du lịch</option>
+           <option value="anuong">Sức khỏe</option>
+           <option value="anuong">Qùa tặng & Quyên góp</option>
+           <option value="anuong">Gia đình</option>
+           <option value="anuong">giáo dục</option>
+           <option value="anuong">Đầu tư</option>
+           <option value="anuong">Kinh doanh</option>
+           <option value="anuong">Bảo hiểm</option>
+           <option value="anuong">Rút tiền</option>
+           <option value="anuong">Khoản chi khác</option>     
+           </select>
+           <label for="lich">Lịch</label><input type="datetime-local" name="lich">
+           <label for="vi">Ví</label>
+       </div>
+    </article>
     <footer style=" background-color: #019421; width: 100vw; height: 15vh;border: 1px solid #135421;">
         <?php include'g_footer.php' ?>
     </footer>

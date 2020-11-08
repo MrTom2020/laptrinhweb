@@ -1,21 +1,13 @@
-article#article aside#bentrai section#theochude,
-article#article aside#bentrai section#theonhasanxuat {
-    margin-top: 1vh;
+div.container img#dt1 {
+    margin-left: -24vw;
+    margin-bottom: -100vh;
 }
 
-article#article aside#bentrai section#theochude ul li,
-article#article aside#bentrai section#theonhasanxuat ul li {
-    margin-left: 3em;
-    list-style: url("../img/tlkhac/muitendo.gif");
+div.container img#dt2 {
+    margin-left: -12vw;
+    margin-bottom: -70vh;
 }
 
-.container {
-    width: 100vw;
-    height: 50vh;
-    border: #FC1F23;
-}
-
-div#frmdangnhap {
-    height: 100vh;
-    width: 100vw;
+div#nut {
+    margin-top: -3%;
 }

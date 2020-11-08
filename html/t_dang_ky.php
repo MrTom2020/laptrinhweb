@@ -26,9 +26,6 @@
    }else{
        echo"kết nối thành công";
    }
-   
-  // echo $_POST["madk"];
-   //$sql = "SELCET * FROM dangnhap";
    if($MADK === '' || $MADK === NULL || $hotendk === '' || $hotendk === NULL || $hotenhienthi === '' || $hotenhienthi === NULL || $SDT === '' || $SDT === NULL ||$DIACHI === '' || $DIACHI === NULL ||$NGAYSINH === '' || $NGAYSINH === NULL || $MADK === '' || $MADK === NULL || $XACNHAN === '' || $XACNHAN === NULL)
    {
        echo 'Bạn phải nhập đầy đủ thông tin ';
@@ -37,7 +34,8 @@
    {
     if($MATKHAU == $XACNHAN)
     {
-          $sql = "INSERT INTO dangnhap VALUES('$MADK','$hotendk','$hotenhienthi','$MADK','$NGAYSINH','$SDT','$DIACHI','NAM','$XACNHAN')";
+         // $sql = "INSERT INTO dangnhap VALUES('$MADK','$hotendk','$hotenhienthi','$MADK','$NGAYSINH','$SDT','$DIACHI','NAM','$XACNHAN')";
+         $sql = "CALL themtaikhoan('$MADK','$hotendk','$hotenhienthi','$MADK','$NGAYSINH','$SDT','$DIACHI','NAM','$XACNHAN')";
           mysqli_query($conn, $sql);
           echo 'Thêm thành công';
     }

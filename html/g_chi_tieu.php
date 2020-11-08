@@ -7,8 +7,11 @@
     <meta http-equiv="Keywords" content="Quản lý tiền,My wallet,Amazing"/>
     <title>QUẢN LÝ CHI TIÊU</title>
     <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="../css/chuyen_trang.css">
     <link rel="stylesheet" type="text/css" href="../css/css_cua_trang_chu.css">
+    <?php
+            session_start();
+            $tendangnhaP = isset($_SESSION['tentaikhoan']) ? $_SESSION['tentaikhoan'] :'ĐĂNG NHẬP';
+    ?>
 </head>
 <body>
 
@@ -21,7 +24,7 @@
     
     <header id="hder">
         <img src="../tainguyenkhac/hinh_anh/hinh_background/bk3.png" alt="Hình banner" class="img-thumbnail row mt-3" style="border:none;background-color: #2cb84b;">
-        <button data-toggle="modal" data-target="#dn" id="DN">ĐĂNG NHẬP</button>
+        <button data-toggle="modal" data-target="#dn" id="DN"><?php  echo $tendangnhaP; ?></button>
         <button data-toggle="modal" id="dk"  data-target="#dk1"> ĐĂNG KÝ</button>
     </header>
     <nav id="NAV" class="navbar navbar-default">

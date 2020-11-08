@@ -3,7 +3,6 @@
     <head>
         <meta charset="utf-8"/>
         <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
-        <link rel="stylesheet" type="text/css" href="../css/chuyen_trang.css">
          <link rel="stylesheet" type="text/css" href="../css/css_cua_trang_chu.css">
     </head>
     <body>

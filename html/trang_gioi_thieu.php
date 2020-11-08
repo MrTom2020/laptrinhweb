@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../css/css_cua_trang_chu.css">
     <?php
             session_start();
+            $tendangnhaP = isset($_SESSION['tentaikhoan']) ? $_SESSION['tentaikhoan'] :'ĐĂNG NHẬP';
     ?>
 </head>
 <body>
@@ -25,7 +26,7 @@
     
     <header id="hder">
         <img src="../tainguyenkhac/hinh_anh/hinh_background/bk3.png" alt="Hình banner" class="img-thumbnail row mt-3" style="border:none;background-color: #2cb84b;">
-        <button data-toggle="modal" data-target="#dn"  id="DN" style="margin-right: 20px;"><?php  echo $_SESSION['tentaikhoan']; ?></button>
+        <button data-toggle="modal" data-target="#dn"  id="DN" style="margin-right: 20px;"><?php  echo $tendangnhaP; ?></button>
         <button data-toggle="modal" id="dk"  data-target="#dk1"> ĐĂNG KÝ</button>
     </header>
     <nav id="NAV" class="navbar navbar-default">
