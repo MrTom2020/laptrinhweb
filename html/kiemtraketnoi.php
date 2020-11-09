@@ -32,7 +32,9 @@
             {
                echo   $row["Usename"] . 
                $row["password"];
-                $_SESSION['tentaikhoan'] = $tennhap;
+                $_SESSION['tentaikhoan1'] = $tennhap;
+                $_SESSION['tentaikhoan'] = $row['hoten'];
+                $_SESSION["password1"] = $matkhaunhap;
                 $_SESSION["logged"] = true;
                 echo $_SESSION['tentaikhoan'];
                 header('Location: http://localhost:8080/html/trangchu.php');

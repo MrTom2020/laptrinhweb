@@ -32,7 +32,7 @@
    }
    else
    {
-    if($MATKHAU == $XACNHAN)
+    if($MATKHAU === $XACNHAN)
     {
          // $sql = "INSERT INTO dangnhap VALUES('$MADK','$hotendk','$hotenhienthi','$MADK','$NGAYSINH','$SDT','$DIACHI','NAM','$XACNHAN')";
          $sql = "CALL themtaikhoan('$MADK','$hotendk','$hotenhienthi','$MADK','$NGAYSINH','$SDT','$DIACHI','NAM','$XACNHAN')";

@@ -7,7 +7,6 @@
     <meta http-equiv="Keywords" content="Quản lý tiền,My wallet,Amazing"/>
     <title>QUẢN LÝ CHI TIÊU</title>
     <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="../css/chuyen_trang.css">
     <link rel="stylesheet" type="text/css" href="../css/css_cua_trang_chu.css">
     <?php
             session_start();
@@ -32,32 +31,37 @@
    <?php include'nav.php' ?>
     </nav>
     <article class="container">
-       <div class="col-sm-7">
-           <label for="giatien">Tiền</label><input type="text" name="giatien" class="form-control"  placeholder="Xin hãy nhập giá trị" style="margin-bottom: 5vh;">
-           <label for="giatien">Nhóm chi</label><select> 
+       <form action="themchitieu.php"  method="POST" class="form-group">
+         <label for="ma">Mã GIAO DỊCH</label><input type="text" name="ma" class="form-control">
+          <label for="nhomchitieu">Nhóm chi tiêu</label>
+          <select name="nhomchitieu"> 
             <option value="anuong">ĂN UỐNG</option>
-            <option value="anuong">Nhà hàng</option>
-            <option value="anuong">Cà phê</option>
-           <option value="anuong">Hóa đơn & Tiện ích</option>
-           <option value="anuong">Điện nước</option>
-           <option value="anuong">Di chuyển</option>
-           <option value="anuong">Mua sắm</option>
-           <option value="anuong">Bạn bè & Người yêu</option>
-           <option value="anuong">giải trí</option>
-           <option value="anuong">Du lịch</option>
-           <option value="anuong">Sức khỏe</option>
-           <option value="anuong">Qùa tặng & Quyên góp</option>
-           <option value="anuong">Gia đình</option>
-           <option value="anuong">giáo dục</option>
-           <option value="anuong">Đầu tư</option>
-           <option value="anuong">Kinh doanh</option>
-           <option value="anuong">Bảo hiểm</option>
-           <option value="anuong">Rút tiền</option>
-           <option value="anuong">Khoản chi khác</option>     
+            <option value="nhahang">Nhà hàng</option>
+            <option value="caphe">Cà phê</option>
+           <option value="hoadonvtienich">Hóa đơn & Tiện ích</option>
+           <option value="diennuoc">Điện nước</option>
+           <option value="dichuyen">Di chuyển</option>
+           <option value="muasam">Mua sắm</option>
+           <option value="banbenvnguoiyeu">Bạn bè & Người yêu</option>
+           <option value="giaitri">giải trí</option>
+           <option value="dulich">Du lịch</option>
+           <option value="suckhoe">Sức khỏe</option>
+           <option value="quatangvquyengop">Qùa tặng & Quyên góp</option>
+           <option value="giadinh">Gia đình</option>
+           <option value="giaoduc">giáo dục</option>
+           <option value="dautu">Đầu tư</option>
+           <option value="kinhdoanh">Kinh doanh</option>
+           <option value="baohiem">Bảo hiểm</option>
+           <option value="ruttien">Rút tiền</option>
+           <option value="khoanchikhac">Khoản chi khác</option>     
            </select>
-           <label for="lich">Lịch</label><input type="datetime-local" name="lich">
-           <label for="vi">Ví</label>
-       </div>
+       <br/> <label for="luachonkhac">Nhóm khác</label><input type="text" name="luachonkhac" class="form-control">
+        <label for="giatritieu">Tiền</label><input type="text" name="giatritieu" class="form-control">
+        <br/>
+        <label for="ngaygd">Ngày</label><input type="datetime-local" name="ngaygd"> <br/>
+        <label for="mota">Mô tả</label> <input type="text" class="form-control" name="mota"><br/><br/>
+        <input type="submit" class="btn btn-default">
+       </form>
     </article>
     <footer style=" background-color: #019421; width: 100vw; height: 15vh;border: 1px solid #135421;">
         <?php include'g_footer.php' ?>
