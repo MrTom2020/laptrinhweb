@@ -32,6 +32,7 @@
                     <div class="col-sm-5" id="nut">
                           <button class="btn btn-secondary" data-dismiss="modal" aria-label="close">ĐĂNG XUẤT</button>
                          <button class="btn btn-secondary" data-dismiss="modal" aria-label="close">THOÁT</button>
+                         <a href="../gentelella/production/">Admin</a>
                     </div>
                         </form>
                     
