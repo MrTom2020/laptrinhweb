@@ -2,7 +2,6 @@
             session_start();
             $TENDN = $_SESSION['tentaikhoan11'];
             $MATKHAU = $_SESSION["password1"] ;
-            $mact = $_POST['ma'];
             $lct = $_POST['nhomchitieu'];
             $tienct = $_POST['giatritieu'];
             $mota1 = $_POST['mota'];
@@ -27,7 +26,8 @@
             $sql = "SELECT MANGUOIDUNG('$TENDN', '$MATKHAU' ,0)";
             $resut = mysqli_query($conn,$sql);
             $row = mysqli_fetch_array($resut);
-            $sql2 = "CALL themgiaodichmuasam('$mact','$lct','$tienct','$ngaygd','$mota1','$row[0]')";
+            $_SESSION["Mand"] = $row[0];
+            $sql2 = "CALL themgiaodichmuasam('$lct','$tienct','$ngaygd','$mota1','$row[0]')";
             if( mysqli_query($conn,$sql2))
             {
                 $_SESSION['THONGBAO'] = "THÊM THÀNH CÔNG";

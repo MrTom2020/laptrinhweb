@@ -35,6 +35,16 @@
                 $_SESSION['tentaikhoan1'] = $tennhap;
                 $_SESSION['tentaikhoan'] = $row['hoten'];
                 $_SESSION["password1"] = $matkhaunhap;
+                $sql1 = "SELECT MANGUOIDUNG('$tennhap','$matkhaunhap',0)";
+                 $resut1 = mysqli_query($conn,$sql1);
+               $row1 = mysqli_fetch_array($resut1);
+               $sql2 = "SELECT kiemtranguoidung('$row1[0]',NULL)";
+                 $resut2 = mysqli_query($conn,$sql2);
+               $row2 = mysqli_fetch_array($resut2);
+                $_SESSION['tui'] = "$row2[0]";
+                 // $sql = "SELECT kiemtranguoidung($row1[0],NULL)";
+                  //  $tr = mysqli_query($conn,$sql);
+                 //  $row = mysqli_fetch_array($tr);
                 $_SESSION["logged"] = true;
                 echo $_SESSION['tentaikhoan'];
                 header('Location: http://localhost:8080/html/trangchu.php');

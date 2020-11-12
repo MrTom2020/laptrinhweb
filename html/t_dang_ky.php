@@ -7,7 +7,7 @@
 </head>
 <body>
 <?php 
-   $MADK = $_POST["madk"];
+    $gioitinh = $_POST["sex"];
   $hotendk = $_POST["tentkdk"];
    $hotenhienthi = $_POST["tentkht"];
    $SDT = $_POST["SDTDK"];
@@ -26,7 +26,7 @@
    }else{
        echo"kết nối thành công";
    }
-   if($MADK === '' || $MADK === NULL || $hotendk === '' || $hotendk === NULL || $hotenhienthi === '' || $hotenhienthi === NULL || $SDT === '' || $SDT === NULL ||$DIACHI === '' || $DIACHI === NULL ||$NGAYSINH === '' || $NGAYSINH === NULL || $MADK === '' || $MADK === NULL || $XACNHAN === '' || $XACNHAN === NULL)
+   if($gioitinh === '' || $gioitinh === NULL || $hotendk === '' || $hotendk === NULL || $hotenhienthi === '' || $hotenhienthi === NULL || $SDT === '' || $SDT === NULL ||$DIACHI === '' || $DIACHI === NULL ||$NGAYSINH === '' || $NGAYSINH === NULL  || $XACNHAN === '' || $XACNHAN === NULL)
    {
        echo 'Bạn phải nhập đầy đủ thông tin ';
    }
@@ -35,7 +35,7 @@
     if($MATKHAU === $XACNHAN)
     {
          // $sql = "INSERT INTO dangnhap VALUES('$MADK','$hotendk','$hotenhienthi','$MADK','$NGAYSINH','$SDT','$DIACHI','NAM','$XACNHAN')";
-         $sql = "CALL themtaikhoan('$MADK','$hotendk','$hotenhienthi','$MADK','$NGAYSINH','$SDT','$DIACHI','NAM','$XACNHAN')";
+         $sql = "CALL themtaikhoan('$hotendk','$hotenhienthi','$NGAYSINH','$SDT','$DIACHI','$gioitinh','$XACNHAN')";
           mysqli_query($conn, $sql);
           echo 'Thêm thành công';
     }

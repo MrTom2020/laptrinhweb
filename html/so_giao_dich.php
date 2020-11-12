@@ -32,7 +32,6 @@
     </nav>
     <article class="container">
        <form action="themchitieu.php"  method="POST" class="form-group">
-         <label for="ma">Mã GIAO DỊCH</label><input type="text" name="ma" class="form-control">
           <label for="nhomchitieu">Nhóm chi tiêu</label>
           <select name="nhomchitieu"> 
             <option value="anuong">ĂN UỐNG</option>

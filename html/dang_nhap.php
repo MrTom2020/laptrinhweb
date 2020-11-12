@@ -2,10 +2,20 @@
 <html lang="vi">
 <head>
     <meta charset="utf-8" />
-
+    <link rel="stylesheet" type="text/css" href="../css/admin.css">
     <?php 
     session_start();
+    $tentieude = isset($_SESSION['tentd']) ? $_SESSION['tentd']:"";
     $thongbao = isset($_SESSION['THONGBAO']) ? $_SESSION['THONGBAO']:'hiện tại chưa có thông báo';
+   // $thongbao = isset($_POST['link1']) ? $_POST['link1']:'hiện tại chưa có thông báo';
+    function dangxuat()
+    {
+        $_SESSION['tentaikhoan'] = 'ĐĂNG NHẬP';
+    }
+    if(isset($_POST["BTNXUAT"]))
+    {
+        dangxuat();
+    }
      ?>
 </head>
 <body>
@@ -20,9 +30,12 @@
                 </div>
                 <div class="modal-body">
                     <div class="container">
-                        <form action="#"  method="POST" role="form" class="row" action="<?php echo $_SERVER['PHP_SELF'];?>">
+                        <form action="http://localhost:8080/html/dang_nhap.php"  method="POST" role="form" class="row">
                          <div class="col-sm-3">
-                             <?php echo $thongbao; ?>
+                             <?php 
+                             echo $tentieude;
+                             echo $thongbao;
+                              ?>
                          </div> 
                          
                          <img id="dt1" src="../tainguyenkhac/hinh_anh/hinh_background/bk2.png" class="image"/>
@@ -30,9 +43,9 @@
                          
                     </div>
                     <div class="col-sm-5" id="nut">
-                          <button class="btn btn-secondary" data-dismiss="modal" aria-label="close">ĐĂNG XUẤT</button>
+                          <button class="btn btn-secondary" data-dismiss="modal" aria-label="close" name="BTNXUAT">ĐĂNG XUẤT</button>
                          <button class="btn btn-secondary" data-dismiss="modal" aria-label="close">THOÁT</button>
-                         <a href="../gentelella/production/">Admin</a>
+                         <button type="button" class="btn btn-secondary" id="ad"><a href="http://localhost:8080/ttt/hi.php">Admin</a></button>
                     </div>
                         </form>
                     

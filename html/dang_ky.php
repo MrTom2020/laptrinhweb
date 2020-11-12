@@ -20,18 +20,14 @@
         <div class="row">
         <div class="col-sm-12">
         <form  action="t_dang_ky.php" method="POST" role="form" class="row">
+       
         <div class="form-group row">
-           <label for="madk">Mã đăng ký</label>
-            <br>
-         <input type="text" placeholder="Xin hãy nhập ma " class="col-sm-3" id="madk" name="madk">
-         </div>
-        <div class="form-group row">
-           <label for="tentkdk">TÊN TÀI KHOẢN</label>
+           <label for="tentkdk">TÊN HIỂN THỊ</label>
             <br>
          <input type="text" placeholder="Xin hãy nhập tài khoản " class="col-sm-3" id="tentkdk" name="tentkdk">
          </div>
          <div class="form-group row mt-5">
-           <label for="tentkht">TÊN HIỂN THỊ</label>
+           <label for="tentkht">TÊN TÀI KHOẢN</label>
             <br>
          <input type="text" placeholder="Xin hãy nhập hiển thị " class="col-sm-3" id="tentkht" name="tentkht">
          </div>
@@ -54,7 +50,10 @@
          <div class="form-group row mt-3">
            <label>GIỚI TÍNH</label>
             <br>
-            <input type="radio" name="sex" value="nam"><label for="sex">NAM</label> <input type="radio" name="sex" value="nu"><label for="sex">NỮ</label>
+            <select name="sex">
+               <option value="NAM">NAM</option>
+               <option value="NU">NỮ</option>
+            </select>
          </div>
           <div class="form-group row mt-3">
           <label for="mktk">MẬT KHẨU</label>
