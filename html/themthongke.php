@@ -36,7 +36,7 @@ $maid = $_POST["maa"];
     $row2 =mysqli_fetch_array($result2);
     $row3 =mysqli_fetch_array($result3);
     $row4 =mysqli_fetch_array($result4);
-    $sql5 = "CALL themthongke(1,'$row3[0]','$row[0]','$row4[0]','$row1[0]','2020-10-1',2)";
+    $sql5 = "CALL themthongke('$row3[0]','$row[0]','$row4[0]','$row1[0]','2020-10-1',5)";
     mysqli_query($conn,$sql5);
    mysqli_close($conn);
 

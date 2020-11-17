@@ -12,18 +12,33 @@
    {
      echo 'KẾT NỐI THÀNH CÔNG';
    }
-   $sql = "CALL hienthithongke()";
+   $sql = "CALL hienthithongke(5)";
    $KETNOI = mysqli_query($conn,$sql);
    $dd = array();
    $i = 0;
   while($row = mysqli_fetch_array($KETNOI))
   {
-
-    array_push($dd,$row);
+    //$row = mysqli_fetch_array($KETNOI);
+    array_push($dd,array(
+      "label"=> "Tiền shopping",
+      "y"=> $row[0]),
+      array(
+        "label"=> "Tiền Mua sắm hằng ngày",
+        "y"=> $row[1]),
+    );
+   // return;
     $i=$i+1;
+    
   }
-  print_r($dd);
-  echo $dd["DailyMoney"][2];
+  $dataPoints7 = array(
+    array("label"=> "Tiền shopping", "y"=> 50),
+    array("label"=> "Tiền Mua sắm hằng ngày", "y"=> 9),
+    array("label"=> "Tiền đầu tư", "y"=> 90)
+  );
+  //print_r($dd);
+ echo "<pre>";
+ print_r($dd);
+ echo "</pre>";
   mysqli_close($conn);
 ?>
 <!DOCTYPE html>
@@ -53,10 +68,17 @@
    [
      {
        type: "stackedColumn100",
-       name: "Housing",
+       name: "Tháng 1",
        showInLegend: true,
        yValueFormatString: "$#,##0 K",
        dataPoints: <?php echo json_encode($dd, JSON_NUMERIC_CHECK); ?>
+     },
+     {
+       type: "stackedColumn100",
+       name: "Tháng 2",
+       showInLegend: true,
+       yValueFormatString: "$#,##0 K",
+       dataPoints: <?php echo json_encode($dataPoints7, JSON_NUMERIC_CHECK); ?>
      }
    ]
  });
