@@ -8,14 +8,8 @@
 <body>
 <article class="container col-sm-12">
 <section  id="s_chung_toi" class="col-8" style="font-size:16px;margin-left:10%;">
-<p  style="font-size:36px;margin-bottom:20%;">Amazing là nền tảng quản lý tài chính hàng đầu ở Đông Nam Á và Đài Loan.</p>
-<p class="panel-body text-center">Ra mắt năm 2015, nền tảng thương mại Amazing được xây dựng nhằm cung cấp cho người sử dùng những trải nghiệm dễ dàng, an toàn và nhanh chóng khi mua sắm trực tuyến thông qua hệ thống hỗ trợ thanh toán và vận hành vững mạnh.</p><br/>
-
-<p class="panel-body text-center">Chúng tôi có niềm tin mạnh mẽ rằng trải nghiệm mua sắm trực tuyến phải đơn giản, dễ dàng và mang đến cảm xúc vui thích. Niềm tin này truyền cảm hứng và thúc đẩy chúng tôi mỗi ngày tại Amazing.</p>
-
-<button type="button" class="button_group">KHÁM PHÁ Amazing</button>
+<p  style="font-size:36px;margin-bottom:-10%;">Amazing là nền tảng quản lý tài chính hàng đầu ở Đông Nam Á và Đài Loan.</p>
 </section>
-
 <section class="col-sm-10" style="padding-left: 18vw;">
     <img src="../tainguyenkhac/hinh_anh/hinh/BK4.png" /><br>
 <div class="col-sm-2" style="padding-right: 4vw;">
@@ -50,6 +44,8 @@ Làm việc chăm chỉ trước, tận hưởng sau
     <h4>Hiểu người khác chính là chìa khóa để lãnh đạo thành công. Tại Amazing,điều quan trọng với chúng tôi là làm thế nào để mang lại trải nghiệm tốt nhất cho nhân viên, đối tác và người dùng.</h4>
 </section>
 </article>
-
+<footer>
+        <?php include'g_footer.php' ?>
+    </footer>
 </body>
 </html>

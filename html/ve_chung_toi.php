@@ -30,12 +30,7 @@
     <nav id="NAV" class="navbar navbar-default">
    <?php include'nav.php' ?>
     </nav>
-    <aside  name="gioithieu">
-       <?php include'g_ve_chung_toi.php' ?>
-    </aside>
-    <footer style=" background-color: #019421; width: 100vw; height: 15vh;border: 1px solid #135421;">
-        <?php include'g_footer.php' ?>
-    </footer>
+    <?php include'g_ve_chung_toi.php' ?>
     <script type="text/javascript" src="../js/jquery-1.10.2.min.js">
     </script>
     <script type="text/javascript" src="../js/bootstrap.min.js">
