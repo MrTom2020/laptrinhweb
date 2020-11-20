@@ -4,14 +4,6 @@
    $serverN = "localhost";
    $password = "";
    $conn = mysqli_connect($serverN,$username,$password,$dtname);
-   if(!$conn)
-   {
-     die('kết nối thất bại'.mysqli_connect_error());
-   }
-   else
-   {
-     echo 'KẾT NỐI THÀNH CÔNG';
-   }
    $sql = "CALL hienthithongke(5)";
    $KETNOI = mysqli_query($conn,$sql);
    $dd = array();
@@ -24,17 +16,17 @@
       "y"=> $row[0]),
       array(
         "label"=> "Tiền Mua sắm hằng ngày",
-        "y"=> $row[1])
+        "y"=> $row[1]),
+       array(
+         "label"=> "Tiền còn lại",
+         "y"=> $row[2]) 
+      
     );
    // return;
     $i=$i+1;
     
   }
- 
-  //print_r($dd);
- echo "<pre>";
- print_r($dd);
- echo "</pre>";
+
   mysqli_close($conn);
 ?>
 <!DOCTYPE html>

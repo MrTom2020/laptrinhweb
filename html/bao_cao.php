@@ -8,6 +8,7 @@
     <title>QUẢN LÝ CHI TIÊU</title>
     <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="../css/css_cua_trang_chu.css">
+    <link rel="stylesheet" type="text/css" href="../css/css_bieu_do.css">
     <?php
             session_start();
             $tendangnhaP = isset($_SESSION['tentaikhoan']) ? $_SESSION['tentaikhoan'] :'ĐĂNG NHẬP';
@@ -30,10 +31,9 @@
     <nav id="NAV" class="navbar navbar-default">
    <?php include'nav.php' ?>
     </nav>
-    <aside class="main-app-container" name="gioithieu">
-        <section>
-    <p id="hiep"></p>
-    <?php include'bieudo.php' ?>
+    <aside class="main-app-container">
+        <section id="bieudo">
+             <?php include'bieudo.php' ?>
         </section>
         <article>
         </article>
