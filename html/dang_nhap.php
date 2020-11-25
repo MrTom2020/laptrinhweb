@@ -10,7 +10,7 @@
    // $thongbao = isset($_POST['link1']) ? $_POST['link1']:'hiện tại chưa có thông báo';
     function dangxuat()
     {
-        $_SESSION['tentaikhoan'] = 'ĐĂNG NHẬP';
+        $_SESSION['tentaikhoan'] = 'Đăng nhập';
     }
     if(isset($_POST["BTNXUAT"]))
     {
@@ -23,7 +23,7 @@
             <div class="modal-content">
 
                 <div class="modal-header">
-                    <H4 class="modal-title" aria-labelledby="dnhap">FORM THÔNG BÁO</H4>
+                    <H4 class="modal-title" aria-labelledby="dnhap">Thông báo</H4>
                     <button type="button" class="close" data-dismiss="modal" aria-label="close">
                   <span aria-hidden="true">&times;</span>
               </button>
@@ -43,9 +43,9 @@
                          
                     </div>
                     <div class="col-sm-5" id="nut">
-                          <button class="btn btn-secondary" data-dismiss="modal" aria-label="close" name="BTNXUAT">ĐĂNG XUẤT</button>
-                         <button class="btn btn-secondary" data-dismiss="modal" aria-label="close">THOÁT</button>
-                         <button type="button" class="btn btn-secondary" id="ad"><a href="http://localhost:8080/ttt/hi.php">Admin</a></button>
+                          <button class="btn btn-secondary" data-dismiss="modal" aria-label="close" name="BTNXUAT">Đăng xuất</button>
+                         <button class="btn btn-secondary" data-dismiss="modal" aria-label="close">Thoát</button>
+                         <button type="button" class="btn btn-secondary" id="ad"><a href="http://localhost:8080/ttt/hi.php">Quản trị viện</a></button>
                     </div>
                         </form>
                     

@@ -12,8 +12,8 @@
 <div class="modal-dialog" role="document">
         <div class="modal-content col-sm-10">
         <div class="modal-header">
-        <h4 class="modal-title text-center" aria-labelledby="dangky" col-sm-3>FORM ĐĂNG KÝ</h4>
-        <button type="button" class="close" data-dismiss="modal" aria-label="close"><span aria-hidden="true">×</span></button>
+        <h4 class="modal-title text-center" aria-labelledby="dangky" col-sm-3>Đăng ký</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="close"><span aria-hidden="true">&times;</span></button>
         </div>
         <div class="modal-body">
         <div class="container">
@@ -22,52 +22,52 @@
         <form  action="t_dang_ky.php" method="POST" role="form" class="row">
        
         <div class="form-group row">
-           <label for="tentkdk">TÊN HIỂN THỊ</label>
+           <label for="tentkdk">Tên hiển thị</label>
             <br>
          <input type="text" placeholder="Xin hãy nhập tài khoản " class="col-sm-3" id="tentkdk" name="tentkdk">
          </div>
          <div class="form-group row mt-5">
-           <label for="tentkht">TÊN TÀI KHOẢN</label>
+           <label for="tentkht">Tên tài khoản</label>
             <br>
          <input type="text" placeholder="Xin hãy nhập hiển thị " class="col-sm-3" id="tentkht" name="tentkht">
          </div>
          
          <div class="form-group row mt-5">
-           <label for="SDT">SDT</label>
+           <label for="SDT">Số điện thoại</label>
             <br>
          <input type="text" placeholder="Xin hãy nhập tài khoản " class="col-sm-3" id="SDTDK" name="SDTDK">
          </div>
          <div class="form-group row mt-5">
-           <label for="DIACHI">ĐỊA CHỈ</label>
+           <label for="DIACHI">Địa chỉ</label>
             <br>
          <input type="text" placeholder="Xin hãy nhập tài khoản " class="col-sm-3" id="DIACHIDK" name="DIACHIDK">
          </div>
          <div class="form-group row mt-3">
-           <label for="ngaysinhtkdk">NGÀY SINH</label>
+           <label for="ngaysinhtkdk">Ngày sinh</label>
             <br>
          <input type="datetime-local" class="col-sm-3" id="ngaysinhtkdk" name="ngaysinhtkdk">
          </div>
          <div class="form-group row mt-3">
-           <label>GIỚI TÍNH</label>
+           <label>Giới tính</label>
             <br>
             <select name="sex">
-               <option value="NAM">NAM</option>
-               <option value="NU">NỮ</option>
+               <option value="NAM">Nam</option>
+               <option value="NU">Nữ</option>
             </select>
          </div>
           <div class="form-group row mt-3">
-          <label for="mktk">MẬT KHẨU</label>
+          <label for="mktk">Mật khẩu</label>
           <br>
              <input class="col-sm-3" id="mktkdk" name="mktkdk" placeholder="Xin hãy nhập mật khẩu" type="password">
            </div>
            <div class="form-group row mt-3">
-          <label for="mktkdkxn">XÁC NHẬN MẬT KHẨU</label>
+          <label for="mktkdkxn">Xác nhận mật khẩu</label>
           <br>
              <input class="col-sm-3" id="mktkdkxn" name="mktkdkxn" placeholder="Xin hãy xác nhận mật khẩu" type="password">
            </div>
         <div class="modal-footer col-sm-3" >
              <input type="submit" class="btn btn-primary" name="ok"> 
-              <button class="btn btn-primary" data-dismiss="modal" aria-label="close">THOÁT</button>
+              <button class="btn btn-primary" data-dismiss="modal" aria-label="close">Thoát</button>
          </div>
         </form>
         </div>

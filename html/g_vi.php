@@ -15,7 +15,7 @@
             <div class="modal-content" id="vi_tien" style="background-image: linear-gradient(to bottom right, #2eb84b, #fff);">
 
                 <div class="modal-header">
-                    <H4 class="modal-title text-center" aria-labelledby="vi_tien">FORM VÍ TIỀN</H4>
+                    <H4 class="modal-title text-center" aria-labelledby="vi_tien">VÍ TIỀN</H4>
                     <button type="button" class="close" data-dismiss="modal" aria-label="close">
                   <span aria-hidden="true">&times;</span>
               </button>
@@ -34,7 +34,7 @@
                             <img src="https://img.icons8.com/emoji/48/000000/money-bag-emoji.png" for="tien"/> <input type="text" name="tien" style="border:1px solid ; margin-left: 0.2em;">
 
                             </div>
-                            <h4 class="text-center col-sm-7" > THÀNH VIÊN </h4>
+                            <h4 class="text-center col-sm-7" > Thành viên</h4>
                             <div class="col-sm-10">
                             <button type="button">Thêm thành viên</button>
                             </div>

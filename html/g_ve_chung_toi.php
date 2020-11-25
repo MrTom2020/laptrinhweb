@@ -44,8 +44,5 @@ Làm việc chăm chỉ trước, tận hưởng sau
     <h4>Hiểu người khác chính là chìa khóa để lãnh đạo thành công. Tại Amazing,điều quan trọng với chúng tôi là làm thế nào để mang lại trải nghiệm tốt nhất cho nhân viên, đối tác và người dùng.</h4>
 </section>
 </article>
-<footer>
-        <?php include'g_footer.php' ?>
-    </footer>
 </body>
 </html>

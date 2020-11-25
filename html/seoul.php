@@ -1,10 +1,7 @@
 <!doctype html>
 <html lang="vi">
 <head>
-    <link rel="stylesheet" type="text/css" href="../css/css_cua_trang_chu.css">
     <meta charset="utf-8"/>
-    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="../css/css_cua_trang_chu.css">
 </head>
 <body>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 89 49" fill="none" id="icon-seoul-gray">

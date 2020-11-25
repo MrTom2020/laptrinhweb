@@ -24,8 +24,8 @@
     &ensp;<?php include'caidat.php' ?><br/>
     Cài đặt</div>
     <div class="col-sm-4" style="padding-bottom:5%;">
-    &ensp;<?php include'nhom.php' ?><br/>
-    Tiện ích
+    &ensp;<?php include'nhom.php' ?><br/><a href="g_tienich.php">
+    Tiện ích</a>
     </div>
     <div class="col-sm-4" style="padding-bottom:5%;">
     &ensp;<?php include'sono.php' ?><br/>

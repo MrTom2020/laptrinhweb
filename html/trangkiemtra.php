@@ -2,7 +2,6 @@
 <!doctype html>
 <html lang="vi">
     <head>
-       <title>XIN CHÀO</title>
        <meta charset="utf-8"/> 
     </head>
     <body>

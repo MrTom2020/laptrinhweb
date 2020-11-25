@@ -11,32 +11,21 @@
              $password = "";
              $dbname = "QLCT";
             $conn = mysqli_connect($servername,$username,$password,$dbname);
-            if(!$conn)
-            {
-                  die('Kết nối thất bại:'.mysqli_connect_error());
-            }
-            else
-             {
-                         echo"kết nối thành công";
-              }
             if( $_SESSION['tentaikhoan'] == '' ||  $_SESSION['tentaikhoan'] == ' ')
             {
                 header('local:../web/');
             }
-            $sql = "SELECT MANGUOIDUNG('$TENDN', '$MATKHAU' ,0)";
-            $resut = mysqli_query($conn,$sql);
-            $row = mysqli_fetch_array($resut);
-            $_SESSION["Mand"] = $row[0];
-            $sql2 = "CALL themgiaodichmuasam('$lct','$tienct','$ngaygd','$mota1','$row[0]')";
+            $ma =$_SESSION['Mand'];
+            $sql2 = "CALL themgiaodichmuasam('$lct',$tienct,'$ngaygd','$mota1',$ma)";
             if( mysqli_query($conn,$sql2))
             {
-                $_SESSION['THONGBAO'] = "THÊM THÀNH CÔNG";
+                $_SESSION['THONGBAO'] = "Thêm giao dịch  thành công";
               header('Location: http://localhost:8080/html/trangchu.php');
               exit();
             }
             else
             {
-                $_SESSION['THONGBAO'] ="THÊM KHOẢNG GIAO DICH KHÔNG THÀNH CÔNG";
+                $_SESSION['THONGBAO'] ="Thêm giao dịch không thành công";
               header('Location: http://localhost:8080/html/trangchu.php');
               exit();
             }

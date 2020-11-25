@@ -16,12 +16,6 @@
    $password = "";
    $dbname = "QLCT";
    $conn = mysqli_connect($servername,$username,$password,$dbname);
-   if(!$conn){
-      die('Kết nối thất bại:'.mysqli_connect_error());
-   }else{
-       echo"kết nối thành công";
-   }
-    
   $sql = "SELECT * FROM dangnhap";
   $ket_noi =mysqli_query($conn,$sql);
   if(mysqli_num_rows($ket_noi) > 0)
@@ -39,12 +33,10 @@
                  $resut1 = mysqli_query($conn,$sql1);
                $row1 = mysqli_fetch_array($resut1);
                $sql2 = "SELECT kiemtranguoidung('$row1[0]',NULL)";
+               $_SESSION['Mand'] = $row1[0];
                  $resut2 = mysqli_query($conn,$sql2);
                $row2 = mysqli_fetch_array($resut2);
-                $_SESSION['tui'] = "$row2[0]";
-                 // $sql = "SELECT kiemtranguoidung($row1[0],NULL)";
-                  //  $tr = mysqli_query($conn,$sql);
-                 //  $row = mysqli_fetch_array($tr);
+                $_SESSION['tui'] = $row2[0];
                 $_SESSION["logged"] = true;
                 echo $_SESSION['tentaikhoan'];
                 header('Location: http://localhost:8080/html/trangchu.php');

@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Elegant Login Form Flat Responsive Widget Template :: w3layouts</title>
+    <title>Amazing</title>
     <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
     <!-- custom-theme -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -35,34 +35,34 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <h1>AMAZING</h1>
         </div>
         <div class="login w3_login">
-            <h2 class="login-header w3_header">Log in</h2>
+            <h2 class="login-header w3_header">Đăng nhập</h2>
             <div class="w3l_grid">
                 <form class="login-container" action="../html/kiemtraketnoi.php" method="post">
                     <input type="text" class="form-control" placeholder="Xin hãy nhập tên tài khoản" Name="tentk1" required="">
                     <input type="password" placeholder="Xin hãy nhập tên mật khẩu" Name="mktk1" required="">
-                    <input type="submit" value="Submit">
+                    <input type="submit" value="Đăng nhập">
                 </form>
                 <div class="second-section w3_section">
                     <div class="bottom-header w3_bottom">
-                        <h3>OR</h3>
+                        <h3>Hay</h3>
                     </div>
                     <div class="social-links w3_social">
                         <ul>
                             <!-- facebook -->
-                            <li> <a class="facebook" href="#" target="blank"><i class="fa fa-facebook"></i></a></li>
+                            <li> <a class="facebook" href="https://www.facebook.com/" target="blank"><i class="fa fa-facebook"></i></a></li>
 
                             <!-- twitter -->
-                            <li> <a class="twitter" href="#" target="blank"><i class="fa fa-twitter"></i></a></li>
+                            <li> <a class="twitter" href="https://twitter.com/" target="blank"><i class="fa fa-twitter"></i></a></li>
 
                             <!-- google plus -->
-                            <li> <a class="googleplus" href="#" target="blank"><i class="fa fa-google-plus"></i></a></li>
+                            <li> <a class="googleplus" href="https://accounts.google.com/ServiceLogin/signinchooser?hl=vi&passive=true&continue=https%3A%2F%2Fwww.google.com%2F&ec=GAZAAQ&flowName=GlifWebSignIn&flowEntry=ServiceLogin" target="blank"><i class="fa fa-google-plus"></i></a></li>
                         </ul>
                     </div>
                 </div>
 
                 <div class="bottom-text w3_bottom_text">
-                    <p>No account yet?<a href="#">Signup</a></p>
-                    <h4> <a href="#">Forgot your password?</a></h4>
+                    <p>Bạn chưa có tài khoản ?<a href="#">Đăng ký</a></p>
+                    <h4> <a href="#">Quên mật khẩu?</a></h4>
                 </div>
 
             </div>
@@ -75,7 +75,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 
     <div class="footer-w3l">
-        <p class="agile"> &copy; 2017 Elegant Login Form . All Rights Reserved | Design by <a href="http://w3layouts.com">W3layouts</a></p>
+        <p class="agile"> &copy; Amazing | Thiết kế bởi <a href="#">LÊ THANH HIỆP</a></p>
     </div>
 </body>
 

@@ -1,42 +1,44 @@
 <?php 
+   session_start();
    $username = "root";
    $dtname = "QLCT";
    $serverN = "localhost";
    $password = "";
    $conn = mysqli_connect($serverN,$username,$password,$dtname);
-   $sql = "CALL hienthithongke(5)";
-   $KETNOI = mysqli_query($conn,$sql);
-   $dd = array();
-  //while($row = mysqli_fetch_array($KETNOI))
-  {
-    $row = mysqli_fetch_array($KETNOI);
-    array_push($dd,array(
+   $maid =  $_SESSION['Mand'];
+   if($maid != '' && $maid != NULL)
+   {
+     $sql = "CALL hienthithongke('$maid')";
+     $KETNOI = mysqli_query($conn,$sql);
+     $dd = array();
+     {
+       $row = mysqli_fetch_array($KETNOI);
+      array_push($dd,
+      array(
       "label"=> "Tiền shopping",
       "y"=> $row[0]),
       array(
-        "label"=> "Tiền Mua sắm hằng ngày",
-        "y"=> $row[1]),
-       array(
-         "label"=> "Tiền còn lại",
-         "y"=> $row[2]) );
-   // return;
-   
-    
-  }
-
+      "label"=> "Tiền Mua sắm hằng ngày",
+      "y"=> $row[1]),
+      array(
+        "label"=> "Tiền đầu tư",
+        "y"=> $row[3]),
+      array(
+      "label"=> "Tiền còn lại",
+      "y"=> $row[2]));
+       }
+   }
   mysqli_close($conn);
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
 </head>
 <script>
-window.onload = function() {
- 
- 
+window.onload = function()
+ {
 var chart = new CanvasJS.Chart("chartContainer", {
 	theme: "light2",
 	animationEnabled: true,

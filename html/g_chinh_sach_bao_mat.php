@@ -10,7 +10,7 @@
 <h1 class="panel-body text-center">CHÍNH SÁCH BẢO MẬT</h1>
 
 
-<h4>1.   GIỚI THIỆU</h4>
+<h4>1.   Giới thiệu</h4>
 
 1.1.         Chào mừng bạn đến với nền tảng Amazing (bao gồm website  và ứng dụng di động Amazing) được được vận hành bởi Công ty TNHH Amazing và các công ty liên kết (gọi riêng và gọi chung là, "Amazing", "chúng tôi", hay "của chúng tôi"). Amazing nghiêm túc thực hiện trách nhiệm của mình liên quan đến bảo mật thông tin theo các quy định về bảo vệ bí mật thông tin cá nhân của pháp luật Việt Nam (“Luật riêng tư”) và cam kết tôn trọng quyền riêng tư và sự quan tâm của tất cả người dùng đối với các nền tảng Amazing (“Nền tảng”) (chúng tôi gọi chung Các Nền tảng và các dịch vụ chúng tôi cung cấp như được mô tả trong Nền tảng của chúng tôi là "Các Dịch Vụ"). Chúng tôi nhận biết tầm quan trọng của dữ liệu cá nhân mà bạn đã tin tưởng giao cho chúng tôi và tin rằng chúng tôi có trách nhiệm quản lý, bảo vệ và xử lý dữ liệu cá nhân của bạn một cách thích hợp. Chính sách bảo mật này ("Chính sách bảo mật" hay "Chính sách") được thiết kế để giúp bạn hiểu được cách thức chúng tôi thu thập, sử dụng, tiết lộ và/hoặc xử lý dữ liệu cá nhân mà bạn đã cung cấp cho chúng tôi và/hoặc lưu giữ về bạn, cho dù là hiện nay hoặc trong tương lai, cũng như để giúp bạn đưa ra quyết định sáng suốt trước khi cung cấp cho chúng tôi bất kỳ dữ liệu cá nhân nào của bạn.
 

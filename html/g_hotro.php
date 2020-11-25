@@ -5,12 +5,12 @@
     <meta charset="utf-8" />
     <meta http-equiv="Description" content="giúp bạn quản lý tài chính tốt hơn,bạn sẽ phải bất ngờ trước sự quản lý hợp logic đến từ chúng tôi"/>
     <meta http-equiv="Keywords" content="Quản lý tiền,My wallet,Amazing"/>
-    <title>QUẢN LÝ CHI TIÊU</title>
+    <title>AMAZING</title>
     <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
    <link rel="stylesheet" type="text/css" href="../css/css_cua_trang_chu.css">
     <?php
             session_start();
-            $tendangnhaP = isset($_SESSION['tentaikhoan']) ? $_SESSION['tentaikhoan'] :'ĐĂNG NHẬP';
+            $tendangnhaP = isset($_SESSION['tentaikhoan']) ? $_SESSION['tentaikhoan'] :'Đăng nhập';
     ?>
 </head>
 <body>
@@ -25,13 +25,13 @@
     <header id="hder">
         <img src="../tainguyenkhac/hinh_anh/hinh_background/bk3.png" alt="Hình banner" class="img-thumbnail" style="border:none;background-color: #2cb84b;">
         <button data-toggle="modal" data-target="#dn"  id="DN" style="margin-right: 20px;"><?php  echo $tendangnhaP; ?></button>
-        <button data-toggle="modal" id="dk"   data-target="#dk1"> ĐĂNG KÝ</button>
+        <button data-toggle="modal" id="dk"   data-target="#dk1"> Đăng ký</button>
     </header>
     <nav id="NAV" class="navbar nav-fill">
   <?php include'nav.php' ?>
     </nav>
     <section class="col-sm-12">
-   <strong> ĐIỀU KHOẢN & ĐỊNH NGHĨA</strong><br/>
+   <strong> Điều khoản và định nghĩa</strong><br/>
     Các điều khoản đại diện cho điều gì?
     <br/> 1. Ví: Ví là một tài khoản đại diện cho một đối tượng của nguồn cụ thể tạo ra thu nhập hoặc chi phí. Bạn có thể tạo nhiều ví để phân tách các nguồn khác nhau và tùy chỉnh chúng để phù hợp với mục đích của mình. Ví dụ: Tiền mặt, Tài khoản ngân hàng, Công ty, Cá nhân, Gia đình, Con trai, Con gái, Cổ phiếu, Đầu tư, v.v.
     <br/> 2. Giao dịch: Thay đổi số dư của bạn. Đó có thể là giao dịch thu nhập, giao dịch chi phí hoặc giao dịch không báo cáo (không phải giao dịch thu nhập hay chi phí)
