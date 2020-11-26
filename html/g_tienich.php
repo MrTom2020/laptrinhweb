@@ -54,7 +54,7 @@
                <br/>
                <br/>
                <br/>
-               <a href="#" class="btn btn-light col-sm-4"><h4>gửi thông báo</h4></a>
+               <a href="#" class="btn btn-light col-sm-4"><h4>Nghe nhạc</h4></a>
                <a href="#" class="btn btn-light col-sm-4"><h4>Xuất dữ liệu</h4></a>
                <a class="btn btn-light col-sm-4" data-toggle="modal"   data-target="#maytinh"><h4>Máy tính</h4></a>
         </article>
